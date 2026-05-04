@@ -1,11 +1,13 @@
+import { useEffect } from "react";
+
 const featuredProjects = [
   {
-    title: "Revenue Dashboard",
-    type: "SaaS analytics platform",
+    title: "Clinic Management System",
+    type: "C# and React full-stack platform",
     summary:
-      "Designed and built a data-heavy dashboard that helped account managers track churn risk, expansion opportunities, and client health in one place.",
-    impact: "Improved internal reporting speed by 42%",
-    stack: ["React", "TypeScript", "Chart.js", "REST API"],
+      "Built a responsive management system for appointments, patient records, and scheduling with a React frontend and a C# backend API.",
+    impact: "Reduced manual coordination and improved daily workflow efficiency",
+    stack: ["React", "C#", "ASP.NET Core", "SQL Server"],
   },
   {
     title: "Commerce Redesign",
@@ -27,50 +29,46 @@ const featuredProjects = [
 
 const experience = [
   {
+    role: "Front-End / Full Stack Developer",
+    company: "GradPathAI",
+    period: "Nov 2024 - Sep 2025",
+    description:
+      "Built an AI-powered SaaS platform for education agencies, using React.js and TypeScript to support university admissions workflows, intelligent program matching, and document automation.",
+  },
+  {
+    role: "Software Developer",
+    company: "University of Northampton",
+    period: "Sep 2023 - Oct 2024",
+    description:
+      "Developed a logistics system simulation as part of an industry-aligned university project, applying enterprise software engineering principles to build a robust desktop application for parcel and customer workflow simulation.",
+  },
+  {
+    role: "Front-End / Software Developer",
+    company: "IRSA",
+    period: "Mar 2022 - Sep 2024",
+    description:
+      "Delivered front-end solutions across multiple digital agency projects in healthcare, travel, insurance, and local trade, building responsive interfaces with React and styled-components.",
+  },
+  {
     role: "Frontend Developer",
-    company: "Studio North",
-    period: "2024 - Present",
+    company: "Tishter.com",
+    period: "Jul 2019 - Feb 2022",
     description:
-      "Owning responsive interfaces for product launches, internal dashboards, and marketing sites while collaborating closely with design and backend teams.",
+      "Worked remotely on a U.S.-based social networking platform connecting businesses and professionals, contributing to frontend features for a globally used product.",
   },
   {
-    role: "Web Developer",
-    company: "Pixel Forge",
-    period: "2022 - 2024",
+    role: "Junior Software Developer",
+    company: "Tarheno",
+    period: "Sep 2018 - Jul 2019",
     description:
-      "Built reusable UI components, improved Lighthouse scores, and turned design files into production-ready experiences across client projects.",
-  },
-  {
-    role: "Junior Frontend Developer",
-    company: "Bright Lab",
-    period: "2021 - 2022",
-    description:
-      "Started by shipping bug fixes and landing pages, then grew into owning small features end to end and supporting team refactors.",
-  },
-];
-
-const process = [
-  "Translate messy business goals into a clean user flow.",
-  "Build UI systems that are easier to scale than redesign later.",
-  "Keep accessibility, speed, and responsiveness in the definition of done.",
-  "Communicate clearly with designers, product managers, and clients.",
-];
-
-const notes = [
-  {
-    title: "What I bring as a mid-level developer",
-    copy:
-      "I am past the tutorial phase and past the point of needing every task broken down. I can ship independently, ask better questions, and make sensible product decisions without overengineering.",
-  },
-  {
-    title: "How I like to work",
-    copy:
-      "I enjoy projects where design matters, but I care just as much about maintainability. The best work for me lives in the overlap between beautiful interfaces and reliable implementation.",
+      "Contributed to enterprise web application development for education and fintech sectors, building early experience with ASP.NET, .NET Core, and full-stack delivery.",
   },
 ];
 
 const skills = [
   "React",
+  "C#",
+  "ASP.NET Core",
   "JavaScript",
   "TypeScript",
   "HTML",
@@ -78,13 +76,109 @@ const skills = [
   "Vite",
   "Next.js",
   "REST APIs",
+  "SQL Server",
   "Responsive Design",
   "UI Systems",
   "Performance",
   "Git",
 ];
 
+const contactItems = [
+  {
+    title: "Email",
+    value: "romina.barzamini@gmail.com",
+    href: "mailto:romina.barzamini@gmail.com",
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.9.03 6.62 5.04a.8.8 0 0 0 .96 0l6.62-5.04H4.9Zm14.6 1.9-6.05 4.6a2.3 2.3 0 0 1-2.9 0L4.5 8.68v8.57c0 .14.11.25.25.25h14.5a.25.25 0 0 0 .25-.25V8.68Z" />
+      </svg>
+    ),
+  },
+  {
+    title: "LinkedIn",
+    value: "in/romina-barzamini",
+    href: "https://www.linkedin.com/in/romina-barzamini/",
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6.8 8.48a1.64 1.64 0 1 1 0-3.28 1.64 1.64 0 0 1 0 3.28ZM5.4 9.9h2.8V19H5.4V9.9Zm4.56 0h2.68v1.24h.04c.37-.7 1.29-1.44 2.65-1.44 2.84 0 3.37 1.87 3.37 4.31V19h-2.8v-4.43c0-1.06-.02-2.42-1.48-2.42-1.49 0-1.72 1.16-1.72 2.35V19h-2.74V9.9Z" />
+      </svg>
+    ),
+  },
+  {
+    title: "GitHub",
+    value: "github.com/rominabarzamini",
+    href: "https://github.com/rominabarzamini",
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 2.5a9.5 9.5 0 0 0-3 18.52c.47.08.64-.2.64-.46l-.01-1.62c-2.6.56-3.15-1.1-3.15-1.1-.43-1.08-1.04-1.37-1.04-1.37-.85-.58.06-.57.06-.57.94.07 1.44.96 1.44.96.84 1.43 2.2 1.02 2.73.78.08-.6.33-1.02.6-1.26-2.08-.24-4.28-1.04-4.28-4.64 0-1.02.36-1.85.96-2.5-.1-.24-.42-1.2.09-2.5 0 0 .78-.25 2.56.95a8.86 8.86 0 0 1 4.66 0c1.77-1.2 2.55-.95 2.55-.95.52 1.3.2 2.26.1 2.5.6.65.95 1.48.95 2.5 0 3.6-2.2 4.39-4.3 4.62.34.29.64.86.64 1.74l-.01 2.58c0 .25.17.55.65.45A9.5 9.5 0 0 0 12 2.5Z" />
+      </svg>
+    ),
+  },
+];
+
+const sectionIds = ["hero", "story", "work", "experience", "contact"];
+
 function App() {
+  useEffect(() => {
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+
+    if (!sections.length) {
+      return undefined;
+    }
+
+    const updateHash = (id) => {
+      if (window.location.hash === `#${id}`) {
+        return;
+      }
+
+      window.history.replaceState(null, "", `#${id}`);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleEntries = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+        if (visibleEntries.length > 0) {
+          updateHash(visibleEntries[0].target.id);
+        }
+      },
+      {
+        rootMargin: "-30% 0px -45% 0px",
+        threshold: [0.2, 0.35, 0.5, 0.7],
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    const syncHashToScroll = () => {
+      const viewportMidpoint = window.innerHeight * 0.4;
+      let activeSection = sections[0];
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= viewportMidpoint) {
+          activeSection = section;
+        }
+      });
+
+      if (activeSection?.id) {
+        updateHash(activeSection.id);
+      }
+    };
+
+    syncHashToScroll();
+    window.addEventListener("scroll", syncHashToScroll, { passive: true });
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", syncHashToScroll);
+    };
+  }, []);
+
   return (
     <div className="page-shell">
       <div className="ambient ambient-left" />
@@ -92,8 +186,42 @@ function App() {
 
       <header className="topbar">
         <a className="brand" href="#hero">
-          Romina Barzamini
+          <span className="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64">
+              <defs>
+                <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#117ec5" />
+                  <stop offset="100%" stopColor="#34a874" />
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="18" fill="#0d2f53" />
+              <rect
+                x="4"
+                y="4"
+                width="56"
+                height="56"
+                rx="16"
+                fill="url(#brandGradient)"
+                opacity="0.18"
+              />
+              <text
+                x="50%"
+                y="53%"
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fill="#f4fbff"
+                fontFamily="Manrope, sans-serif"
+                fontSize="24"
+                fontWeight="800"
+                letterSpacing="1.5"
+              >
+                RB
+              </text>
+            </svg>
+          </span>
+          <span className="brand-name">Romina Barzamini</span>
         </a>
+
         <nav className="nav">
           <a href="#work">Work</a>
           <a href="#story">About</a>
@@ -105,7 +233,7 @@ function App() {
       <main>
         <section className="hero" id="hero">
           <div className="hero-copy reveal">
-            <p className="eyebrow">Frontend Developer • Mid-Level • React</p>
+            <p className="eyebrow">Web Developer • Mid-Level • React</p>
             <h1>
               Romina Barzamini builds digital products that feel calm, modern,
               and easy to trust.
@@ -127,61 +255,54 @@ function App() {
           </div>
 
           <aside className="hero-card reveal reveal-delay">
-            <p className="card-label">At a glance</p>
-            <ul>
-              <li>3+ years building production interfaces</li>
-              <li>Comfortable owning features end to end</li>
-              <li>Strong in responsive UI and front-end systems</li>
-              <li>Focused on clarity, detail, and clean execution</li>
-            </ul>
+            <div className="portrait-frame">
+              <img
+                className="portrait-image"
+                src="/romina-portrait.jfif"
+                alt="Romina Barzamini portrait"
+              />
+            </div>
+            <div className="hero-card-copy">
+              <p className="card-label">At a glance</p>
+              <ul>
+                <li>3+ years building production interfaces</li>
+                <li>Comfortable owning features end to end</li>
+                <li>Strong in responsive UI and front-end systems</li>
+                <li>Focused on clarity, detail, and clean execution</li>
+              </ul>
+            </div>
           </aside>
-        </section>
-
-        <section className="stats reveal">
-          <article>
-            <span>12+</span>
-            <p>launched features and redesigns across product and marketing</p>
-          </article>
-          <article>
-            <span>90+</span>
-            <p>Lighthouse scores targeted as part of delivery standards</p>
-          </article>
-          <article>
-            <span>100%</span>
-            <p>single-page flow so the whole story is visible on landing</p>
-          </article>
         </section>
 
         <section className="section story-grid" id="story">
           <div className="section-heading reveal">
             <p className="eyebrow">About</p>
-            <h2>A portfolio that reads like a strong introduction, all at once.</h2>
+            <h2>Here&apos;s a little more about me and my story.</h2>
           </div>
 
-          <div className="story-panels">
-            <article className="panel panel-large reveal">
+          <div className="about-layout">
+            <div className="about-image-panel reveal">
+              <img
+                className="about-image"
+                src="/romina-portrait.jfif"
+                alt="Romina Barzamini"
+              />
+            </div>
+
+            <article className="about-story about-box reveal">
               <p>
-                I am a mid-level frontend developer who enjoys shaping product
-                ideas into interfaces that feel smooth, clear, and responsive.
-                My best work happens when visual direction and practical
-                engineering need to live in the same place.
-              </p>
-              <p>
-                Inspired by the long-form feeling of the reference site, this
-                page mixes selected work, experience, and personal perspective
-                into one continuous flow. It is less like a collection of links
-                and more like a guided introduction to how Romina works.
+                Hi, my name is Romina. I am a Front-End and Full-Stack
+                Developer with a Master&apos;s degree in Software Engineering and
+                over five years of experience across freelance, startup, agency,
+                and SaaS environments. I specialize in building responsive,
+                user-centered digital experiences with React, TypeScript, and
+                modern front-end workflows, while also growing my full-stack
+                work with C#, ASP.NET Core, and SQL-based systems. I enjoy
+                creating clean, practical products that balance user needs with
+                business goals, and I am especially interested in artificial
+                intelligence, accessibility, and thoughtful product design.
               </p>
             </article>
-
-            <div className="notes-stack">
-              {notes.map((note) => (
-                <article className="panel reveal" key={note.title}>
-                  <h3>{note.title}</h3>
-                  <p>{note.copy}</p>
-                </article>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -221,27 +342,16 @@ function App() {
               ))}
             </div>
           </article>
-
-          <article className="panel reveal">
-            <p className="eyebrow">Approach</p>
-            <h2>How I move projects forward</h2>
-            <ul className="process-list">
-              {process.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
         </section>
 
         <section className="section timeline-section" id="experience">
           <div className="section-heading reveal">
             <p className="eyebrow">Experience</p>
-            <h2>Experience that shows increasing ownership and confidence.</h2>
           </div>
 
           <div className="timeline">
             {experience.map((item) => (
-              <article className="timeline-item reveal" key={item.role}>
+              <article className="timeline-item reveal" key={`${item.company}-${item.period}`}>
                 <div className="timeline-meta">
                   <p>{item.period}</p>
                   <span>{item.company}</span>
@@ -255,39 +365,32 @@ function App() {
           </div>
         </section>
 
-        <section className="section quote-section reveal">
-          <blockquote>
-            “Good interfaces should feel effortless on every screen.”
-          </blockquote>
-          <p>
-            This layout is designed to show both capability and personality in a
-            single responsive experience.
-          </p>
-        </section>
-
         <section className="section contact-section" id="contact">
-          <div className="section-heading reveal">
+          <div className="section-heading contact-heading reveal">
             <p className="eyebrow">Contact</p>
-            <h2>If you need a developer who can design in code, let&apos;s talk.</h2>
+            <p className="contact-intro">
+              If you&apos;re looking for a front-end or full-stack developer for a
+              product, platform, or collaboration, feel free to reach out.
+            </p>
           </div>
 
           <div className="contact-card reveal">
-            <div>
-              <p>Email</p>
-              <a href="mailto:romina@example.com">romina@example.com</a>
-            </div>
-            <div>
-              <p>LinkedIn</p>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                linkedin.com/in/romina-barzamini
+            {contactItems.map((item) => (
+              <a
+                className="contact-link"
+                href={item.href}
+                key={item.title}
+                target={item.href.startsWith("http") ? "_blank" : undefined}
+                rel={item.href.startsWith("http") ? "noreferrer" : undefined}
+                aria-label={`${item.title}: ${item.value}`}
+              >
+                <span className="contact-icon">{item.icon}</span>
+                <span className="contact-copy">
+                  <span className="contact-label">{item.title}</span>
+                  <span className="contact-value">{item.value}</span>
+                </span>
               </a>
-            </div>
-            <div>
-              <p>GitHub</p>
-              <a href="https://github.com" target="_blank" rel="noreferrer">
-                github.com/rominabarzamini
-              </a>
-            </div>
+            ))}
           </div>
         </section>
       </main>
