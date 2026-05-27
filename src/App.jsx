@@ -283,15 +283,14 @@ function App() {
                 Hi, my name is Romina, here&apos;s my story!
               </p>
               <p className="about-paragraph">
-                I am a Front-End and Full-Stack Developer with a Master&apos;s
+                I am a Front-End  Developer with a Master&apos;s
                 degree in Software Engineering and over five years of experience
                 across freelance, startup, agency, and SaaS environments.
               </p>
               <p className="about-paragraph">
                 I specialize in building responsive, user-centered digital
                 experiences with React, TypeScript, and modern front-end
-                workflows, while also growing my full-stack work with C#,
-                ASP.NET Core, and SQL-based systems.
+                workflows.
               </p>
               <p className="about-paragraph">
                 I enjoy creating clean, practical products that balance user
@@ -300,40 +299,11 @@ function App() {
                 design.
               </p>
 
-              <div className="about-block">
-                <p className="about-block-title">What I bring:</p>
-                <ul className="about-list">
-                  <li>Responsive UI development turning ideas into clear, usable interfaces</li>
-                  <li>Front-end and full-stack delivery across React, TypeScript, C#, and ASP.NET Core</li>
-                  <li>Cross-functional collaboration with teams, stakeholders, and real product goals</li>
-                </ul>
-              </div>
-
-              <p className="about-paragraph">
-                I&apos;m passionate about creating digital products that make
-                everyday interactions smoother, clearer, and more enjoyable.
-              </p>
-
-              <div className="about-block">
-                <p className="about-inline">
-                  <strong>Tools:</strong> React, TypeScript, JavaScript, C#,
-                  ASP.NET Core, SQL Server, styled-components, Git, and modern
-                  UI workflows.
-                </p>
-                <p className="about-inline">
-                  <strong>Interests:</strong> AI, education, accessibility,
-                  research-driven development, and thoughtful product design.
-                </p>
-              </div>
             </article>
           </div>
         </section>
 
-        <section className="section" id="work">
-          <div className="section-heading reveal">
-            <p className="eyebrow">Featured Work</p>
-            <h2>Selected projects presented with outcomes, not just visuals.</h2>
-          </div>
+        
 
           <div className="projects">
             {featuredProjects.map((project, index) => (
@@ -392,7 +362,7 @@ function App() {
           <div className="section-heading contact-heading reveal">
             <p className="eyebrow">Contact</p>
             <p className="contact-intro">
-              If you&apos;re looking for a front-end or full-stack developer for a
+              If you&apos;re looking for a front-end  developer for a
               product, platform, or collaboration, feel free to reach out.
             </p>
           </div>
@@ -419,7 +389,7 @@ function App() {
 
         <footer className="site-footer reveal">
           <p>Romina Barzamini</p>
-          <span>Front-End and Full-Stack Developer</span>
+          <span>Front-End Developer</span>
         </footer>
       </main>
     </div>
