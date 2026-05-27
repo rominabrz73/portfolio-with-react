@@ -1,17 +1,32 @@
-# Portfolio With React
+# Front-End Portfolio Website
 
-A responsive frontend portfolio project built with React.
-
-## Tech Stack
-- React
-- JavaScript
-- CSS
+A modern and responsive portfolio website built with React and Vite to showcase my experience, projects, and front-end development skills.
 
 ## Features
-- Responsive layout
-- Component-based structure
-- Clean UI design
+
+- Responsive modern UI
+- Smooth scrolling navigation
+- Interactive sections and animations
+- Experience timeline
+- Skills showcase
+- Contact section with social links
+- Clean and accessible design
+
+## Tech Stack
+
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+
+## Live Demo
+
+https://portfolio-with-react-sand-eight.vercel.app/
 
 ## Run Locally
-npm install
-npm start
+
+Clone the project:
+
+```bash
+git clone https://github.com/rominabrz73/portfolio-with-react.git
