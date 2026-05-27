@@ -278,7 +278,7 @@ function App() {
         </section>
 
         
-
+        <section>
           <div className="projects">
             {featuredProjects.map((project, index) => (
               <article className="project-card reveal" key={project.title}>
