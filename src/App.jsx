@@ -1,31 +1,6 @@
 import { useEffect } from "react";
 
-const featuredProjects = [
-  {
-    title: "Clinic Management System",
-    type: "C# and React full-stack platform",
-    summary:
-      "Built a responsive management system for appointments, patient records, and scheduling with a React frontend and a C# backend API.",
-    impact: "Reduced manual coordination and improved daily workflow efficiency",
-    stack: ["React", "C#", "ASP.NET Core", "SQL Server"],
-  },
-  {
-    title: "Commerce Redesign",
-    type: "E-commerce storefront",
-    summary:
-      "Led the front-end refresh of a growing online store with a focus on mobile conversion, clearer product storytelling, and performance cleanup.",
-    impact: "Lifted mobile conversion by 18%",
-    stack: ["React", "SCSS", "Node.js", "Stripe"],
-  },
-  {
-    title: "Hiring Portal",
-    type: "Internal product",
-    summary:
-      "Created a streamlined interface for recruiters to manage applicants, interview stages, and feedback loops without bouncing between spreadsheets.",
-    impact: "Cut manual admin time by 10 hours per week",
-    stack: ["React", "Vite", "Firebase", "Framer Motion"],
-  },
-];
+
 
 const experience = [
   {
@@ -67,8 +42,7 @@ const experience = [
 
 const skills = [
   "React",
-  "C#",
-  "ASP.NET Core",
+  
   "JavaScript",
   "TypeScript",
   "HTML",
