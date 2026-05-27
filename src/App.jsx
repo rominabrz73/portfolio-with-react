@@ -232,76 +232,99 @@ function App() {
 
       <main>
         <section className="hero" id="hero">
+          <div className="hero-orb hero-orb-left" aria-hidden="true" />
+          <div className="hero-orb hero-orb-mid" aria-hidden="true" />
+          <div className="hero-orb hero-orb-right" aria-hidden="true" />
+
           <div className="hero-copy reveal">
-            <p className="eyebrow">Web Developer • Mid-Level • React</p>
+            <p className="eyebrow">Frontend • Full-Stack • React</p>
             <h1>
-              Romina Barzamini builds digital products that feel calm, modern,
-              and easy to trust.
+              <span className="hero-greeting">Hi, I&apos;m</span>
+              <span className="hero-name">Romina Barzamini</span>
             </h1>
+            <h2 className="hero-role">Front-End and Full-Stack Developer</h2>
             <p className="lead">
-              This portfolio is designed as one long landing page so hiring
-              managers can understand my work, strengths, and visual taste
-              without needing to jump between pages.
+              Building modern, responsive digital experiences with clean UI,
+              thoughtful interactions, and scalable full-stack systems.
             </p>
 
             <div className="hero-actions">
               <a className="button button-primary" href="#work">
-                See selected work
+                View My Work
               </a>
               <a className="button button-secondary" href="#contact">
-                Let&apos;s work together
+                Get In Touch
               </a>
             </div>
           </div>
-
-          <aside className="hero-card reveal reveal-delay">
-            <div className="portrait-frame">
-              <img
-                className="portrait-image"
-                src="/romina-portrait.jfif"
-                alt="Romina Barzamini portrait"
-              />
-            </div>
-            <div className="hero-card-copy">
-              <p className="card-label">At a glance</p>
-              <ul>
-                <li>3+ years building production interfaces</li>
-                <li>Comfortable owning features end to end</li>
-                <li>Strong in responsive UI and front-end systems</li>
-                <li>Focused on clarity, detail, and clean execution</li>
-              </ul>
-            </div>
-          </aside>
         </section>
 
         <section className="section story-grid" id="story">
           <div className="section-heading reveal">
             <p className="eyebrow">About</p>
-            <h2>Here&apos;s a little more about me and my story.</h2>
+            <p className="about-kicker-line">
+              I turn complex ideas into clear, calm digital experiences.
+            </p>
           </div>
 
-          <div className="about-layout">
-            <div className="about-image-panel reveal">
-              <img
-                className="about-image"
-                src="/romina-portrait.jfif"
-                alt="Romina Barzamini"
-              />
+          <div className="about-layout about-profile-layout">
+            <div className="about-visual reveal">
+              <div className="about-blob">
+                <img
+                  className="about-image"
+                  src="/romina-portrait-selected.png"
+                  alt="Romina Barzamini"
+                />
+              </div>
             </div>
 
-            <article className="about-story about-box reveal">
-              <p>
-                Hi, my name is Romina. I am a Front-End and Full-Stack
-                Developer with a Master&apos;s degree in Software Engineering and
-                over five years of experience across freelance, startup, agency,
-                and SaaS environments. I specialize in building responsive,
-                user-centered digital experiences with React, TypeScript, and
-                modern front-end workflows, while also growing my full-stack
-                work with C#, ASP.NET Core, and SQL-based systems. I enjoy
-                creating clean, practical products that balance user needs with
-                business goals, and I am especially interested in artificial
-                intelligence, accessibility, and thoughtful product design.
+            <article className="about-story about-article reveal">
+              <p className="about-intro">
+                Hi, my name is Romina, here&apos;s my story!
               </p>
+              <p className="about-paragraph">
+                I am a Front-End and Full-Stack Developer with a Master&apos;s
+                degree in Software Engineering and over five years of experience
+                across freelance, startup, agency, and SaaS environments.
+              </p>
+              <p className="about-paragraph">
+                I specialize in building responsive, user-centered digital
+                experiences with React, TypeScript, and modern front-end
+                workflows, while also growing my full-stack work with C#,
+                ASP.NET Core, and SQL-based systems.
+              </p>
+              <p className="about-paragraph">
+                I enjoy creating clean, practical products that balance user
+                needs with business goals, and I am especially interested in
+                artificial intelligence, accessibility, and thoughtful product
+                design.
+              </p>
+
+              <div className="about-block">
+                <p className="about-block-title">What I bring:</p>
+                <ul className="about-list">
+                  <li>Responsive UI development turning ideas into clear, usable interfaces</li>
+                  <li>Front-end and full-stack delivery across React, TypeScript, C#, and ASP.NET Core</li>
+                  <li>Cross-functional collaboration with teams, stakeholders, and real product goals</li>
+                </ul>
+              </div>
+
+              <p className="about-paragraph">
+                I&apos;m passionate about creating digital products that make
+                everyday interactions smoother, clearer, and more enjoyable.
+              </p>
+
+              <div className="about-block">
+                <p className="about-inline">
+                  <strong>Tools:</strong> React, TypeScript, JavaScript, C#,
+                  ASP.NET Core, SQL Server, styled-components, Git, and modern
+                  UI workflows.
+                </p>
+                <p className="about-inline">
+                  <strong>Interests:</strong> AI, education, accessibility,
+                  research-driven development, and thoughtful product design.
+                </p>
+              </div>
             </article>
           </div>
         </section>
@@ -393,6 +416,11 @@ function App() {
             ))}
           </div>
         </section>
+
+        <footer className="site-footer reveal">
+          <p>Romina Barzamini</p>
+          <span>Front-End and Full-Stack Developer</span>
+        </footer>
       </main>
     </div>
   );
