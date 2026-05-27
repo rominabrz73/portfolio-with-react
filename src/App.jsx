@@ -42,7 +42,6 @@ const experience = [
 
 const skills = [
   "React",
-  
   "JavaScript",
   "TypeScript",
   "HTML",
