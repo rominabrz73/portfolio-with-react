@@ -276,28 +276,6 @@ function App() {
           </div>
         </section>
 
-        
-        <section>
-          <div className="projects">
-            {featuredProjects.map((project, index) => (
-              <article className="project-card reveal" key={project.title}>
-                <div className="project-index">0{index + 1}</div>
-                <div className="project-content">
-                  <p className="project-type">{project.type}</p>
-                  <h3>{project.title}</h3>
-                  <p>{project.summary}</p>
-                  <strong>{project.impact}</strong>
-                  <div className="tags">
-                    {project.stack.map((item) => (
-                      <span key={item}>{item}</span>
-                    ))}
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
         <section className="section skills-layout">
           <article className="panel reveal">
             <p className="eyebrow">Skills</p>
