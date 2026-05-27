@@ -210,12 +210,12 @@ function App() {
           <div className="hero-orb hero-orb-right" aria-hidden="true" />
 
           <div className="hero-copy reveal">
-            <p className="eyebrow">Frontend • Full-Stack • React</p>
+            <p className="eyebrow">Frontend  • React</p>
             <h1>
               <span className="hero-greeting">Hi, I&apos;m</span>
               <span className="hero-name">Romina Barzamini</span>
             </h1>
-            <h2 className="hero-role">Front-End and Full-Stack Developer</h2>
+            <h2 className="hero-role">Front-End Developer</h2>
             <p className="lead">
               Building modern, responsive digital experiences with clean UI,
               thoughtful interactions, and scalable full-stack systems.
